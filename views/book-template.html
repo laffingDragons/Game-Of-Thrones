@@ -1,0 +1,8 @@
+<div ng-if="got.isbn">
+    <a ng-click="data.hide() " ng-href='#/books/{{ got.url.split("/").pop() }}'><div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="pinkCard">
+            <h2>{{got.name}}</h2>
+            <h4>{{got.authors1}}</h4>     
+        </div>
+    </div></a>
+</div>

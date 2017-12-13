@@ -1,0 +1,25 @@
+<br/><br/><br/><br/><br/>
+<div class="container-fluid">
+    <div style="color: dimgrey;" ng-repeat="data in dc.bookDetails">
+        <div class="col-xs-12 text-center">
+            <h2> {{ data.name }}</h2>
+        </div>
+        <div class="col-xs-12 text-center">
+            <h5><b>Author</b> : {{ data.author }}</h5>
+            <h5><b>Country</b> : {{ data.country }}</h5>
+            <h5><b>Pages</b> : {{ data.numberOfPages }}</h5>
+            <h5><b>Publisher</b> : {{ data.publisher }}</h5>
+            <h5><b>Released on</b> : {{ data.released | date }}</h5>
+        </div>
+        <div class="col-xs-12 text-center" ng-if='got.povCharacters.length >= 1'>
+            <h4><b>Main Characters</b></h4>
+            <hr style=" border-top: 1px solid #0c0909; margin-top: 2px;">
+            <hr/>
+            <div class="container" ng-repeat="pov in got.povCharacters">
+                <h6><a ng-href='#/characters/{{ pov.split("/").pop() }}'>{{ pov }}</a></h6>
+            </div>
+        </div>
+        <div class="col-xs-12" style="display: flex;justify-content: center;margin: 10px 0px;">
+        </div>
+    </div>
+</div>
