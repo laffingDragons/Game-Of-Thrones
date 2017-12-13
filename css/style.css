@@ -17,11 +17,11 @@ body {
 }
 
 ::selection {
-    background: green;
+    background: transparent;
 }
 
 ::-moz-selection {
-    background: green;
+    background: transparent;
 }
 
 .affix {
@@ -320,45 +320,46 @@ body {
     display: inline-block
 }
 
-.pinkCard{
-    
-  background: -webkit-linear-gradient(-45deg, #FF015B 0, rgba(82,82,229,1) 100%);
-background: -moz-linear-gradient(135deg, #FF015B 0, rgba(82,82,229,1) 100%);
-background: linear-gradient(135deg, #FF015B 0, rgba(82,82,229,1) 100%);
-background-position: 50% 50%;
--webkit-background-origin: padding-box;
-background-origin: padding-box;
--webkit-background-clip: border-box;
-background-clip: border-box;
--webkit-background-size: auto auto;
-background-size: auto auto;
+.pinkCard {
 
-width: auto;
-height: auto;
-padding: 32px 32px 70px;
-margin: 13px;
-right: 24%;
-left: 24%;
-overflow: visible;
-display: block;
-float: none;
-z-index: auto;
--webkit-box-sizing: content-box;
--moz-box-sizing: content-box;
-box-sizing: content-box;
+    background: -webkit-linear-gradient(-45deg, #FF015B 0, rgba(82, 82, 229, 1) 100%);
+    background: -moz-linear-gradient(135deg, #FF015B 0, rgba(82, 82, 229, 1) 100%);
+    background: linear-gradient(135deg, #FF015B 0, rgba(82, 82, 229, 1) 100%);
+    background-position: 50% 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
 
-opacity: 1;
-cursor: default;
-    
--webkit-box-shadow: 3px 5px 4px 0 rgba(0,0,0,0.4) ;
-box-shadow: 3px 5px 4px 0 rgba(0,0,0,0.4) ;
-    
-border: none;
--webkit-border-radius: 19px;
-border-radius: 19px; 
-    
-    
+    width: auto;
+    height: auto;
+    padding: 32px 32px 70px;
+    margin: 13px;
+    right: 24%;
+    left: 24%;
+    overflow: visible;
+    display: block;
+    float: none;
+    z-index: auto;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+
+    opacity: 1;
+    cursor: default;
+
+    -webkit-box-shadow: 3px 5px 4px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 5px 4px 0 rgba(0, 0, 0, 0.4);
+
+    border: none;
+    -webkit-border-radius: 19px;
+    border-radius: 19px;
+
+
 }
+
 .greenCard {
 
     background: -webkit-linear-gradient(-45deg, rgba(43, 255, 138, 1) 0, rgba(19, 247, 194, 1) 100%);
@@ -480,15 +481,38 @@ footer.nb-footer .copyright p {
     padding: 0;
 }
 
-.bookBackground{
-    background: url("/images/book.jpg");
-background-position: 50% 50%;
--webkit-background-origin: padding-box;
-background-origin: padding-box;
--webkit-background-clip: border-box;
-background-clip: border-box;
--webkit-background-size: cover;
-background-size: cover;
-    
+.bookBackground {
 
+    background-image: url("/images/book.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+
+    width: auto;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    display: block;
+    float: none;
+    z-index: auto;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    position: static;
+    cursor: default;
+    opacity: 0.63;
+}
+
+.times {
+    font: normal 16px/1 "Times New Roman", Times, serif;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
 }

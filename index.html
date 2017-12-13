@@ -46,7 +46,7 @@
 
     <!---View-->
     <hr/>
-    <div class="container bookBackground">
+    <div class="container">
         <div ng-repeat="got in data.info | orderBy: data.sortColumn : data.reverseSort | filter : data.searchText ">
             <div ng-if='data.bookButton'>
                 <div book></div>

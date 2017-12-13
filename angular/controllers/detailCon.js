@@ -2,16 +2,24 @@ myApp.controller("bookCon", ["$routeParams", "api", function ($routeParams, api)
 
     //creating Context
     var main = this;
+    
     this.bookId = $routeParams.a;
+    
+    this.writer;
 
     this.bookDetails = [];
 
     this.bookDetail = function () {
-
         api.getBook(main.bookId)
             .then(function successCallback(response) {
                 main.bookDetails.push(response.data);
                 console.log(main.bookDetails);
+                //converting array to string
+                this.authorString = [];
+                for (var i in response.data.authors) {
+                    this.authorString.push(response.data.authors[i]);
+                }
+                main.writer = this.authorString.toString();
 
             }, function errorCallback(reason) {
                 alert("Error in GET");
