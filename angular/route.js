@@ -2,18 +2,18 @@ myApp.config(["$routeProvider", function ($routeProvider) {
     $routeProvider
         .when("/books/:a", {
             templateUrl: "views/book-view.html",
-            controller: "detailCon",
-            controllerAs: "dc"
+            controller: "bookCon",
+            controllerAs: "bCon"
         })
         .when("/characters/:b", {
             templateUrl: "views/charac-view.html",
-            controller: "detailCon",
-            controllerAs: "dc"
+            controller: "characCon",
+            controllerAs: "cCon"
         })
         .when("/houses/:c", {
             templateUrl: "views/house-view.html",
-            controller: "detailCon",
-            controllerAs: "dc"
+            controller: "houseCon",
+            controllerAs: "hCon"
         })
         .otherwise({
             redirectTo: '/'

@@ -479,3 +479,16 @@ footer.nb-footer .copyright p {
     margin: 0;
     padding: 0;
 }
+
+.bookBackground{
+    background: url("/images/book.jpg");
+background-position: 50% 50%;
+-webkit-background-origin: padding-box;
+background-origin: padding-box;
+-webkit-background-clip: border-box;
+background-clip: border-box;
+-webkit-background-size: cover;
+background-size: cover;
+    
+
+}
