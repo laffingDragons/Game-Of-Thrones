@@ -506,13 +506,71 @@ footer.nb-footer .copyright p {
     box-sizing: content-box;
     position: static;
     cursor: default;
-    opacity: 0.63;
+    opacity:1;
+}
+
+.characBackground {
+
+    background-image: url("/images/charac.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+
+    width: auto;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    display: block;
+    float: none;
+    z-index: auto;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    position: static;
+    cursor: default;
+    opacity:1;
+}
+
+.houseBackground {
+
+    background-image: url("/images/house.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+
+    width: auto;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    display: block;
+    float: none;
+    z-index: auto;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    position: static;
+    cursor: default;
+    opacity:1;
 }
 
 .times {
-    font: normal 16px/1 "Times New Roman", Times, serif;
+    font: normal 16px "Times New Roman", Times, serif;
     color: rgba(255, 255, 255, 1);
     text-align: center;
     -o-text-overflow: clip;
     text-overflow: clip;
-}
+    word-break: break-all;
+   
+

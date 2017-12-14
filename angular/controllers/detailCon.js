@@ -38,13 +38,20 @@ myApp.controller("characCon", ["$routeParams", "api", function ($routeParams, ap
     this.characId = $routeParams.b;
 
     this.characDetails = [];
-
+    this.seasons;
     this.characDetail = function () {
 
         api.getCharac(main.characId)
             .then(function successCallback(response) {
                 main.characDetails.push(response.data);
                 console.log(main.characDetails);
+            //for getting appeared in string
+                this.seasonString =[];
+		
+			for(var j in response.data.tvSeries){
+				this.seasonString.push(response.data.tvSeries[j]);	
+			}
+			main.seasons = this.seasonString.toString(); 
 
             }, function errorCallback(reason) {
                 alert("Error in GET");
