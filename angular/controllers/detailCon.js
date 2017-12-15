@@ -39,6 +39,7 @@ myApp.controller("characCon", ["$routeParams", "api", function ($routeParams, ap
 
     this.characDetails = [];
     this.seasons;
+    
     this.characDetail = function () {
 
         api.getCharac(main.characId)
@@ -70,13 +71,21 @@ myApp.controller("houseCon", ["$routeParams", "api", function ($routeParams, api
     this.houseId = $routeParams.c;
 
     this.houseDetails = [];
+    this.titles;
 
     this.houseDetail = function () {
 
-        api.getBook(main.houseId)
+        api.getHouse(main.houseId)
             .then(function successCallback(response) {
                 main.houseDetails.push(response.data);
                 console.log(main.houseDetails);
+            //for getting titles
+            this.titleString =[]; // For more titles
+			for(var i in response.data.titles){
+				this.titleString.push(response.data.titles[i]);
+			}
+
+			main.titles = this.titleString.toString(); 
 
             }, function errorCallback(reason) {
                 alert("Error in GET");

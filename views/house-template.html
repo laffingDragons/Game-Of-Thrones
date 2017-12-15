@@ -1,8 +1,10 @@
 <div ng-if="got.region">
-    <div class="col-sm-12 col-md-6 col-lg-4">
-        <div class="greenCard">
-            <h2>{{got.name}}</h2>
-            <h2>{{got.region}}</h2>
+    <a ng-click="data.hide() " ng-href='#/houses/{{ got.url.split("/").pop() }}'>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="greenCard">
+                <h2>{{got.name}}</h2>
+                <h2>{{got.region}}</h2>
+            </div>
         </div>
-    </div>
+    </a>
 </div>
