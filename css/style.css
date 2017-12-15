@@ -484,7 +484,7 @@ footer.nb-footer .copyright p {
 .bookBackground {
 
     background-image: url("../images/book.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: 50% 50%;
     -webkit-background-origin: padding-box;
     background-origin: padding-box;
@@ -512,7 +512,7 @@ footer.nb-footer .copyright p {
 .characBackground {
 
     background-image: url("../images/charac.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: 50% 50%;
     -webkit-background-origin: padding-box;
     background-origin: padding-box;
@@ -540,7 +540,7 @@ footer.nb-footer .copyright p {
 .houseBackground {
 
     background-image: url("../images/house.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: 50% 50%;
     -webkit-background-origin: padding-box;
     background-origin: padding-box;
@@ -571,6 +571,10 @@ footer.nb-footer .copyright p {
     text-align: center;
     -o-text-overflow: clip;
     text-overflow: clip;
-    word-break: break-all;
+    word-break: keep-all ;
    
+}
+
+a{
+    word-break: keep-all ;
 }
