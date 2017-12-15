@@ -483,7 +483,7 @@ footer.nb-footer .copyright p {
 
 .bookBackground {
 
-    background-image: url("/images/book.jpg");
+    background-image: url("../images/book.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-origin: padding-box;
@@ -511,7 +511,7 @@ footer.nb-footer .copyright p {
 
 .characBackground {
 
-    background-image: url("/images/charac.jpg");
+    background-image: url("../images/charac.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-origin: padding-box;
@@ -539,7 +539,7 @@ footer.nb-footer .copyright p {
 
 .houseBackground {
 
-    background-image: url("/images/house.jpg");
+    background-image: url("../images/house.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-origin: padding-box;
