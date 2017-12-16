@@ -5,24 +5,28 @@
             <h1 ng-if='data.name'>
                 {{ data.name }}
             </h1><br/>
-            <h4 ng-if='data.aliases[0]'><strong>Known as</strong> : "{{ data.aliases[0] }}"</h4>
-            <h4 ng-if='data.gender'>Gender : {{ data.gender }}</h4>
-            <h4 ng-if='data.born'> Born : {{ data.born }}</h4>
-            <h4 ng-if='data.culture'>Culture : {{ data.culture }}</h4>
-            <h4 ng-if='data.died'>Died : {{ data.died }}</h4>
-            <h4 ng-if='data.father'>Father :
+            <h4 ng-if='data.aliases[0]'><strong>Known as</strong><br/>
+                "{{ cCon.alias }}"</h4>
+            <h4 ng-if='data.gender'><strong>Gender</strong> : {{ data.gender }}</h4>
+            <h4 ng-if='data.born'><strong> Born </strong>: {{ data.born }}</h4>
+            <h4 ng-if='data.culture'><strong>Culture</strong> : {{ data.culture }}</h4>
+            <h4 ng-if='data.died'><strong>Died </strong>: {{ data.died }}</h4>
+            <h4 ng-if='data.father'><strong>Father</strong> :
                 <h6><a ng-href='#/characters/{{ data.father.split("/").pop() }}'>{{ data.father }}</a></h6>
             </h4>
-            <h4 ng-if='data.mother'> Mother :
+            <h4 ng-if='data.mother'> <strong>Mother</strong> :
                 <h6><a ng-href='#/characters/{{ data.mother.split("/").pop() }}'>{{ data.mother }}</a></h6>
             </h4>
             <h4 ng-if='data.spouse'>
-                Spouse :
+                <strong>Spouse </strong>:
                 <h6><a ng-href='#/characters/{{ data.spouse.split("/").pop() }}'>{{ data.spouse}}</a></h6>
             </h4>
-            <h4 ng-if='data.playedBy[0]'>Played by : "{{ data.playedBy[0] }}"</h4>
-            <h4 ng-if='data.titles[0]'>Title : "{{ data.titles[0]}}"</h4>
-            <h4 ng-if='cCon.seasons'>Appeared in : "{{ cCon.seasons }}"</h4>
+            <h4 ng-if='data.playedBy[0]'><strong>Played by</strong> : "{{ data.playedBy[0] }}"</h4>
+            <h4 ng-if='data.titles[0]'><strong>Title</strong> : "{{ data.titles[0]}}"</h4>
+            <h4 ng-if='cCon.seasons'><strong>Appeared in</strong> : "{{ cCon.seasons }}"</h4>
         </div>
+        <div class="col-xs-12" style="display: flex;justify-content: center;margin: 10px 0px;">
+        <a ng-href="#/" class="backB" style="display: inline-block;" ng-click="data.home()">Home</a>
+    </div>
     </div>
 </div>

@@ -506,7 +506,7 @@ footer.nb-footer .copyright p {
     box-sizing: content-box;
     position: static;
     cursor: default;
-    opacity:1;
+    opacity: 1;
 }
 
 .characBackground {
@@ -534,7 +534,7 @@ footer.nb-footer .copyright p {
     box-sizing: content-box;
     position: static;
     cursor: default;
-    opacity:1;
+    opacity: 1;
 }
 
 .houseBackground {
@@ -562,7 +562,7 @@ footer.nb-footer .copyright p {
     box-sizing: content-box;
     position: static;
     cursor: default;
-    opacity:1;
+    opacity: 1;
 }
 
 .times {
@@ -571,10 +571,51 @@ footer.nb-footer .copyright p {
     text-align: center;
     -o-text-overflow: clip;
     text-overflow: clip;
-    word-break: keep-all ;
-   
+    word-break: keep-all;
+
 }
 
-a{
-    word-break: keep-all ;
+a {
+    word-break: keep-all;
 }
+
+.backB {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    position: relative;
+    cursor: pointer;
+    top: 0;
+    padding: 0 20px;
+    border: 2px solid rgb(255, 255, 255);
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+    font: normal 16px "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: transparent;
+    -webkit-box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.4);
+}
+
+.backB:hover {
+    color: black;
+    background: #ffffff;
+}
+
+/* Animation */
+
+/*.greenCard .ng-leave {
+    transition: 1s linear all;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.greenCard .ng-leave .ng-leave-active {
+    opacity: 0;
+    transform: translateX(-100);
+}*/

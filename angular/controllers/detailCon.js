@@ -39,6 +39,7 @@ myApp.controller("characCon", ["$routeParams", "api", function ($routeParams, ap
 
     this.characDetails = [];
     this.seasons;
+    this.alias;
     
     this.characDetail = function () {
 
@@ -46,6 +47,12 @@ myApp.controller("characCon", ["$routeParams", "api", function ($routeParams, ap
             .then(function successCallback(response) {
                 main.characDetails.push(response.data);
                 console.log(main.characDetails);
+            //for getting aliases
+            this.aliasesString=[];
+            for(var i in response.data.aliases){
+                this.aliasesString.push(response.data.aliases[i]);
+            }
+            main.alias = this.aliasesString.toString();
             //for getting appeared in string
                 this.seasonString =[];
 		

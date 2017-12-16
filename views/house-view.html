@@ -1,30 +1,34 @@
-
 <div class="container-fluid houseBackground">
     <br/><br/><br/>
     <div class="times" ng-repeat="data in hCon.houseDetails">
         <div class="col-xs-12 text-center">
             <h1 style="margin: 10px 5px;" ng-if='data.name'><b> {{ data.name }}  </b></h1>
-            <h4 ng-if='data.region'>Region : {{ data.region }}</h4>
-            <h4 ng-if='data.seats[0]'>Seats : {{ data.seats[0] }}</h4>
-            <h4 ng-if='hCon.titles'>Titles : {{ hCon.titles }}</h4>
-            <h4 ng-if='data.founded'>Founded : {{ data.founded }}</h4>
-            <p ng-if='data.words'> Words: {{ data.words }}</p>
-            <h4 ng-if='data.heir'>Heir :</h4><h6><a ng-href='#/characters/{{ data.heir.split("/").pop() }}'>{{ data.heir}}</a></h6>
+            <h4 ng-if='data.region'><strong>Region</strong> : {{ data.region }}</h4>
+            <h4 ng-if='data.seats[0]'><strong>Seats</strong> : {{ data.seats[0] }}</h4>
+            <h4 ng-if='hCon.titles'><strong>Titles</strong> : {{ hCon.titles }}</h4>
+            <h4 ng-if='data.founded'><strong>Founded</strong> : {{ data.founded }}</h4>
+            <p ng-if='data.words'> <strong>Words</strong>: {{ data.words }}</p>
+            <h4 ng-if='data.heir'><strong>Heir</strong> </h4>
+            <h6><a ng-href='#/characters/{{ data.heir.split("/").pop() }}'>{{ data.heir}}</a></h6>
 
-            <h4 ng-if='data.currentLord'>Current Lord :</h4><h6><a ng-href='#/characters/{{ data.currentLord.split("/").pop() }}'>{{ data.currentLord }}</a></h6>
+            <h4 ng-if='data.currentLord'><strong>Current Lord</strong> </h4>
+            <h6><a ng-href='#/characters/{{ data.currentLord.split("/").pop() }}'>{{ data.currentLord }}</a></h6>
 
-            <h4 ng-if='data.overLord'>Overlord :</h4><h6 class="h6"><a ng-href='#/houses/{{ data.overlord.split("/").pop() }}'>{{ data.overLord }}</a></h6>
+            <h4 ng-if='data.overLord'><strong>Overlord</strong> </h4>
+            <h6 class="h6"><a ng-href='#/houses/{{ data.overlord.split("/").pop() }}'>{{ data.overLord }}</a></h6>
 
-            <p ng-if='data.coatOfArms'>Coat Of Arms : "{{ data.coatOfArms }}"</p>
+            <p ng-if='data.coatOfArms'><strong>Coat Of Arms</strong> : "{{ data.coatOfArms }}"</p>
 
             <div ng-if='data.swornMembers.length >= 1'>
-                <h3>Sworn Members</h3>
+                <h3><strong>Sworn Members</strong></h3>
                 <div ng-repeat="sworn in data.swornMembers">
                     <h6><a ng-href='#/characters/{{ sworn.split("/").pop() }}'>{{ sworn }}</a></h6>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Row ends -->
+
+    <div id="back" class="col-xs-12" style="display: flex;justify-content: center;margin: 10px 0px;">
+        <a ng-href="#/" class="backB" style="display: inline-block;" ng-click="data.home()">Home</a>
+    </div>
 </div>
-<!-- Container Ends -->
