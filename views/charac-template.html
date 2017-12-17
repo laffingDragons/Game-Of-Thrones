@@ -1,11 +1,11 @@
 <div ng-if="got.gender">
     <a ng-click="data.hide() " ng-href='#/characters/{{ got.url.split("/").pop() }}'>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="greenCard">
-                <h2>{{got.name}}</h2>
-                <h2>{{got.aliases[0]}}</h2>
-                <h2>{{got.tvSeries}}</h2>
+        <div class="col-lg-12">
+            <div class="times">
+                <h1>{{got.name}}</h1><br/>
+                <h3 ng-if="got.aliases[0]"><strong>AKA : </strong>{{got.aliases[0]}}</h3><hr/>
             </div>
         </div>
     </a>
 </div>
+
