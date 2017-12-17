@@ -33,7 +33,7 @@ myApp.controller('mainCon', ["api", "$routeParams",function (api, $routeParams) 
     //call for character
     this.url2 = function () {
 
-        for (var y = 1; y <= 150; y++) {
+        for (var y = 1; y <= 100; y++) {
             api.getCharac(y)
                 .then(function successCallback(response) {
                         main.characArray = response.data;
