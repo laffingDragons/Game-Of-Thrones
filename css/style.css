@@ -616,3 +616,22 @@ a {
     opacity: 0;
     transform: translateX(-100);
 }*/
+.view-container.ng-enter {
+  transition:1s linear all;
+  opacity:0;
+  
+}
+
+.view-container.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+.anime .ng-leave{
+    transition: 0.7s linear all;
+    transform: translateX(300px)
+    opacity: 1
+}
+
+.anime .ng-leave .ng-leave-active{
+    opacity: 0;
+}
