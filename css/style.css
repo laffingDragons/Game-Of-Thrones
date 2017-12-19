@@ -626,12 +626,3 @@ a {
   opacity:1;
 }
 
-.anime .ng-leave{
-    transition: 0.7s linear all;
-    transform: translateX(300px)
-    opacity: 1
-}
-
-.anime .ng-leave .ng-leave-active{
-    opacity: 0;
-}
