@@ -564,7 +564,7 @@ footer.nb-footer .copyright p {
 
 .times {
     font: normal 16px "Times New Roman", Times, serif;
-    color: rgba(255, 255, 255, 1);
+    color: silver;
     text-align: center;
     -o-text-overflow: clip;
     text-overflow: clip;
