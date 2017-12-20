@@ -1,0 +1,9 @@
+This Advance AngularJs application Assignment 5
+
+Here is link to my repository 
+
+https://github.com/laffingDragons/Game-Of-Thrones
+
+here is link to my live page
+
+https://laffingdragons.github.io/Game-Of-Thrones/
