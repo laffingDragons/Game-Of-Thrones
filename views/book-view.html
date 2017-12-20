@@ -1,24 +1,22 @@
-
 <div class="container-fluid bookBackground">
     <br/><br/><br/>
-        <div class="col-sm-12 col-md-12">
-            <div class="times" ng-repeat="data in bCon.bookDetails  ">
-                <h1>{{data.name}}</h1>
-                <hr/>
-                <h4><strong>Author</strong> : {{ bCon.writer }}</h4>
-                <h4><strong>Country</strong> : {{ data.country }}</h4>
-                <h4><strong>Pages</strong> : {{ data.numberOfPages }}</h4>
-                <h4><strong>Publisher</strong> : {{ data.publisher }}</h4>
-                <h4><strong>Released on</strong> : {{ data.released | date }}</h4>
-                <div ng-if='data.povCharacters.length >= 1'> POV Characters
-                    <div ng-repeat="pov in data.povCharacters | limitTo: 4">
-                        <h6><a ng-href='#/characters/{{ pov.split("/").pop() }}'>{{ pov }}</a></h6>
-                    </div>
+    <div class="col-sm-12 col-md-12">
+        <div class="times" ng-repeat="data in bCon.bookDetails  ">
+            <h1>{{data.name}}</h1>
+            <hr/>
+            <h4><strong>Author</strong> : {{ bCon.writer }}</h4>
+            <h4><strong>Country</strong> : {{ data.country }}</h4>
+            <h4><strong>Pages</strong> : {{ data.numberOfPages }}</h4>
+            <h4><strong>Publisher</strong> : {{ data.publisher }}</h4>
+            <h4><strong>Released on</strong> : {{ data.released | date }}</h4>
+            <div ng-if='data.povCharacters.length >= 1'> POV Characters
+                <div ng-repeat="pov in data.povCharacters | limitTo: 4">
+                    <h6><a ng-href='#/characters/{{ pov.split("/").pop() }}'>{{ pov }}</a></h6>
                 </div>
             </div>
-             <div id="back" class="col-xs-12" style="display: flex;justify-content: center;margin: 10px 0px;">
-        <a ng-href="#/" class="backB" style="display: inline-block;" ng-click="data.home()">Home</a>
-    </div>
+        </div>
+        <div id="back" class="col-xs-12" style="display: flex;justify-content: center;margin: 10px 0px;">
+            <a ng-href="#/" class="backB" style="display: inline-block;" ng-click="data.home()">Home</a>
         </div>
     </div>
-
+</div>

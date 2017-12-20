@@ -2,7 +2,9 @@
     <br/><br/><br/>
     <div class="times" ng-repeat="data in hCon.houseDetails">
         <div class="col-xs-12 text-center">
-            <h1 style="margin: 10px 5px;" ng-if='data.name'><b> {{ data.name }}  </b><hr/></h1>
+            <h1 style="margin: 10px 5px;" ng-if='data.name'><b> {{ data.name }}  </b>
+                <hr/>
+            </h1>
             <h4 ng-if='data.region'><strong>Region</strong> : {{ data.region }}</h4>
             <h4 ng-if='data.seats[0]'><strong>Seats</strong> : {{ data.seats[0] }}</h4>
             <h4 ng-if='hCon.titles'><strong>Titles</strong> : {{ hCon.titles }}</h4>

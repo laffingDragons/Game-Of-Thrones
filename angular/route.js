@@ -20,6 +20,6 @@ myApp.config(["$routeProvider", function ($routeProvider) {
         });
           }]);
 
-myApp.config(['$locationProvider', function($locationProvider) {
-  $locationProvider.hashPrefix('');
+myApp.config(['$locationProvider', function ($locationProvider) {
+    $locationProvider.hashPrefix('');
 }]);

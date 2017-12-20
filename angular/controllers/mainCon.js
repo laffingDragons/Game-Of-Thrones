@@ -1,4 +1,4 @@
-myApp.controller('mainCon', ["api", "$routeParams",function (api, $routeParams) {
+myApp.controller('mainCon', ["api", "$routeParams", function (api, $routeParams) {
 
     //creating context
     var main = this;
@@ -7,9 +7,7 @@ myApp.controller('mainCon', ["api", "$routeParams",function (api, $routeParams) 
     this.bookArray;
     this.characArray;
     this.houseArray;
-    
-    //this.bookId = $routeParams.a;
-    //console.log(this.bookId);
+    this.moreData;
 
     //calling
     this.url1 = function () {
@@ -19,8 +17,6 @@ myApp.controller('mainCon', ["api", "$routeParams",function (api, $routeParams) 
                 .then(function successCallback(response) {
                         main.bookArray = response.data;
                         main.info.push(main.bookArray);
-                        //this.bookId= x;
-                
                     },
                     function errorCallback(reason) {
                         alert("Some error occurred. Check the console.");
@@ -33,13 +29,12 @@ myApp.controller('mainCon', ["api", "$routeParams",function (api, $routeParams) 
     //call for character
     this.url2 = function () {
 
-        for (var y = 1; y <= 100; y++) {
+        for (var y = 1; y <= 150; y++) {
             api.getCharac(y)
                 .then(function successCallback(response) {
                         main.characArray = response.data;
                         //console.log(main.characArray);
                         main.info.push(main.characArray);
-
                     },
                     function errorCallback(reason) {
                         alert("Some error occurred. Check the console.");
@@ -54,11 +49,9 @@ myApp.controller('mainCon', ["api", "$routeParams",function (api, $routeParams) 
         for (var z = 1; z <= 50; z++) {
             api.getHouse(z)
                 .then(function successCallback(response) {
-
                         main.houseArray = response.data;
                         //console.log(main.houseArray);
                         main.info.push(main.houseArray);
-
                     },
                     function errorCallback(reason) {
                         alert("Some error occurred. Check the console.");
@@ -81,7 +74,7 @@ myApp.controller('mainCon', ["api", "$routeParams",function (api, $routeParams) 
         this.bookButton = false;
         this.characButton = false;
         this.houseButton = false;
-       
+
     }
     this.home = function () {
         this.homeButton = true;

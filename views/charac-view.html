@@ -5,8 +5,7 @@
             <h1 ng-if='data.name'>
                 {{ data.name }}
             </h1><br/>
-            <h4 ng-if='data.aliases[0]'><strong>Known as</strong><br/>
-                "{{ cCon.alias }}"</h4>
+            <h4 ng-if='data.aliases[0]'><strong>Known as</strong><br/> "{{ cCon.alias }}"</h4>
             <h4 ng-if='data.gender'><strong>Gender</strong> : {{ data.gender }}</h4>
             <h4 ng-if='data.born'><strong> Born </strong>: {{ data.born }}</h4>
             <h4 ng-if='data.culture'><strong>Culture</strong> : {{ data.culture }}</h4>
@@ -26,7 +25,7 @@
             <h4 ng-if='cCon.seasons'><strong>Appeared in</strong> : "{{ cCon.seasons }}"</h4>
         </div>
         <div class="col-xs-12" style="display: flex;justify-content: center;margin: 10px 0px;">
-        <a ng-href="#/" class="backB" style="display: inline-block;" ng-click="data.home()">Home</a>
-    </div>
+            <a ng-href="#/" class="backB" style="display: inline-block;" ng-click="data.home()">Home</a>
+        </div>
     </div>
 </div>
